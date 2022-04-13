@@ -1,0 +1,299 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+}
+
+.center{
+	display: flex;
+	max-width: 1100px;
+	padding: 0 2%;
+	margin: 0 auto;
+	flex-wrap: wrap;
+}
+
+/*
+section main
+*/
+
+.main{
+	background-image: url(image/bg.svg);
+	min-height: 700px;
+	background-position: center;
+	background-size: cover;
+	padding: 20px 0 80px 0;
+}
+
+/*
+ section menu
+*/
+
+.menu{
+	display: flex;
+	width: 100%;
+}
+
+.logo{
+	width: 50%;
+}
+
+.itens-menu{
+	width: 50%;
+	text-align: right;
+}
+
+.itens-menu a{
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	margin: 10px;
+
+}
+
+.itens-menu a:hover{
+	border-bottom: 2px solid #ffdd33;
+}
+
+.itens-menu a.contact-btn{
+	background-color: #0f3fd3;
+	padding: 10px 10px;
+	border-radius:15px;
+}
+
+.itens-menu a.contact-btn:hover{
+	border: 0;
+}
+
+
+.mockup{
+	display: block;
+	color: white;
+	text-align: center;
+	width: 100%;
+	padding-top: 100px;
+}
+
+.mockup h1{
+	font-size: 50px;
+}
+
+.mockup img{
+	max-width: 100%;
+}
+
+/*
+ marcas
+*/
+
+.marcas{
+	padding: 100px 0;
+}
+
+.marcas img{
+	width: calc(100%/5);
+}
+
+/*
+ porque-nos
+*/
+
+.porque-nos{
+	padding: 40px 0;
+	background-color: #FBFCFE;
+}
+
+
+section.porque-nos > .center > h2{
+	font-size: 64px;
+	text-align: center;
+	width: 100%;
+}
+
+section.porque-nos > .center{
+	max-width: 1280px;
+}
+
+section.porque-nos > .center > p{
+	font-size: 14px;
+	color: #ccc;
+	text-align: center;
+	width: 100%;
+}
+
+.diferenciais{
+	display: flex;
+	margin-top: 50px;
+
+}
+
+.box-diferenciais{
+	box-shadow: 0px 20px 40px #2426721C;
+	width: 31%;
+	margin-right: 2%;
+	padding: 10px 20px;
+	border-radius: 10px;
+}
+
+.box-diferenciais h3{
+	font-size: 28px;
+	margin: 20px 0;
+	color: black;
+}
+
+.box-diferenciais p{
+	font-size: 13px;
+	color: #7E92AC;
+	margin-bottom: 20px;
+}
+
+/*
+ Seu-projeto
+*/
+
+.seu-projeto{
+	background-image: url(image/BANNER-IMG.SVG);
+	background-size: cover;
+	padding: 20px 10px;
+	text-align: center;
+	color: white;
+	min-height: 200px;
+	background-position: center;
+}
+
+.seu-projeto h2,
+.seu-projeto h4{
+	font-weight: normal;
+	margin: 10px 0;
+}
+
+.seu-projeto h2{
+	font-size: 40px;
+}
+
+.seu-projeto a{
+	display: inline-block;
+	text-decoration: none;
+	padding: 8px 15px;
+	border-radius: 7px;
+	font-size: 17px;
+	font-weight: bold;
+	background-color: #FFDD33;
+	margin-top: 10px;
+
+}
+
+/*
+voce
+*/
+
+section.voce{
+	padding: 50px 0;
+}
+
+.hero{
+	width: 40%;
+	margin: 30px 0;
+}
+
+.hero h1{
+	color: black;
+	font-size: 40px;
+}
+
+.hero p{
+	padding-bottom: 50px;
+	vertical-align: middle;
+	font-size: 14px;
+}
+
+.hero span{
+	display: inline-block;
+	width: calc(100% - 70px);
+}
+
+.hero img{
+	display: inline-block;
+	vertical-align: middle;
+	width: 70px; 	
+}
+
+.pc{
+	width: 60%;
+}
+
+.pc img{
+	max-width: 100%;
+}
+
+.hero a{
+	padding: 12px 30px;
+	background-color: #255AFF;
+	color: white;
+	text-decoration: none;
+	border-radius: 10px;
+	font-weight: 400;
+	
+}
+
+/*
+voce
+*/
+
+footer{
+	background-color: blue;
+}
+
+.jota{
+	width: 100%;
+}
+
+.jota h1{
+	text-align: center;
+	color: white;
+	font-size: 16px;
+	font-style: normal;
+	padding: 20px 0;
+}
+
+
+@media screen and (max-width: 768px) {
+
+	.hero{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.pc{
+		width: 100%;
+	}
+
+	.diferenciais{
+	flex-wrap: wrap;
+
+	}
+
+	.box-diferenciais{
+	width: 100%;
+	margin-right: 0;
+	}
+
+.marcas > .center{
+
+	flex-wrap: nowrap;
+	flex-direction: column;
+	align-items: center;
+	}
+
+.marcas img{
+	max-width: 300px;
+	width: 100%;
+
+	}
+
+}
+
+
+
+
